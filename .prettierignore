@@ -1,0 +1,11 @@
+/*
+!/src
+
+*.ico
+*.png
+*.svg
+
+# System Files
+
+# Git
+.gitkeep
