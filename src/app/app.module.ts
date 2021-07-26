@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { UnicornListComponent } from './pages/unicorn-list/unicorn-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UnicornListComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, UnicornListComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

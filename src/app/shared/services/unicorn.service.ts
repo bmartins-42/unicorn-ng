@@ -5,13 +5,12 @@ import { Unicorn } from '../models/unicorn.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UnicornService {
-
-  constructor(private readonly http: HttpClient) { }
+  constructor(private readonly http: HttpClient) {}
 
   public getUnicorn(): Observable<Unicorn[]> {
-    return this.http.get<Unicorn[]>(`${environment.apiUrl}/unicorns`)
+    return this.http.get<Unicorn[]>(`${environment.apiUrl}/unicorns`);
   }
 }
